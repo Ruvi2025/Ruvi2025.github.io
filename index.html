@@ -3,54 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Architectural Firm</title>
+  <title>Studio Arc — Architectural Excellence</title>
   <style>
+    :root {
+      --bg: #fdf6f0;
+      --accent: #aec6cf;
+      --soft-green: #d5e8d4;
+      --peach: #ffe5b4;
+      --text: #333;
+      --white: #fff;
+    }
+
     body {
-      font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
     }
+
     header {
-      background-color: #333;
-      color: white;
-      padding: 1.5rem;
+      background-color: var(--accent);
+      color: var(--white);
       text-align: center;
+      padding: 3rem 1rem;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+
     section {
-      padding: 2rem;
+      padding: 2.5rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
     }
+
+    section h2 {
+      border-left: 6px solid var(--accent);
+      padding-left: 10px;
+      font-size: 1.8rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about, .contact {
+      background-color: var(--soft-green);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
     footer {
-      background-color: #222;
-      color: white;
-      padding: 1rem;
+      background-color: var(--peach);
+      color: var(--text);
       text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Your Architecture Firm</h1>
-    <p>Designing spaces that inspire</p>
+    <h1>RUVI and Associates</h1>
+    <p>Architecture with soul — blending creativity and precision</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#drawings">Drawings</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Us</h2>
-    <p>We are a team of award-winning architects based in [Your City]. We specialize in residential, commercial, and interior architecture.</p>
+    <div class="about">
+      <p>At Studio Arc, we create sustainable, elegant, and human-centric spaces. Our team of architects and designers work across residential, commercial, and public infrastructure projects, bringing both vision and practicality to every design.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Our Work</h2>
-    <p>[Add images or descriptions of past projects]</p>
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1618220179428-a0e9ee0d0a2c" alt="Modern House">
+      <img src="https://images.unsplash.com/photo-1529429611273-04e25903e8a5" alt="Interior Design">
+      <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Office Space">
+    </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: yourname@domain.com<br>Phone: (123) 456-7890</p>
+  <section id="drawings">
+    <h2>Architectural Drawings</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1603570417630-3f62f732dcd7" alt="Drawing 1">
+      <img src="https://images.unsplash.com/photo-1554329720-8d9d7c6c17c5" alt="Blueprint">
+      <img src="https://images.unsplash.com/photo-1529429611273-04e25903e8a5" alt="Render Sketch">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p><strong>Email:</strong> ruviandassociates@gmail.com</p>
+      <p><strong>Phone:</strong> +91 88707 48668</p>
+      <p><strong>Location:</strong> Coimbatore, Tamil Nadu</p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Your Architecture Firm
+    &copy; 2025 Studio Arc — All rights reserved.
   </footer>
+
 </body>
 </html>
+
